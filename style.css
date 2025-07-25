@@ -1,15 +1,345 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    font-family: "Inter", sans-serif;  
-}
-
-
-.container{
+img {
     width: 100%;
-    max-width: 1440px;
 }
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #F5F8FF;
+   
+}
+
+
+.container {
+    max-width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.content-width {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+/* Header */
+
+.navbar {
+    height: 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+
+.mob-cart {
+    display: none;
+}
+
+.logo {
+    width: 135px;
+    height: 90%;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-link {
+    list-style: none;
+    padding-right: 48px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.nav-link>a {
+    text-decoration: none;
+    color: #8987A1;
+    font-size: medium;
+
+}
+
+.nav-link>span {
+    color: #000000;
+    font-size: medium;
+}
+
+.active {
+    color: #000000;
+    font-weight: bold;
+}
+
+.banner {
+    height: 461px;
+    display: flex;
+    align-items: end;
+    margin-bottom: 120px;
+
+    width: 100%;
+
+
+
+}
+
+.banner-content {
+    flex: 1;
+
+    height: 300px;
+
+}
+
+.banner-image {
+    flex: 1;
+
+    height: 355px;
+}
+
+.banner-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.banner-title {
+    font-size: 65px;
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+    color: #000000;
+}
+
+.banner-title>span {
+    color: #E95A08;
+}
+
+.banner-description {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-weight: 500;
+
+}
+
+
+
+/* Plants Style */
+
+.plant {
+    text-align: center;
+    width: 100%;
+
+}
+
+.plant-title {
+    font-size: 50px;
+    font-family: "Noto Serif", serif;
+    font-weight: bold;
+    color: #E95A08;
+
+}
+
+.plant-title>span {
+    color: #000000;
+}
+
+.plant-description {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 48px;
+}
+
+.plant-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    place-items: center;
+    margin-bottom: 210px;
+
+}
+
+.card {
+    height: 485px;
+    width: 100%;
+    max-width: 322px;
+
+    margin-bottom: 20px;
+
+}
+
+.card-image {
+
+    width: 100%;
+    max-height: 322px;
+
+
+    margin-bottom: 30px;
+}
+
+.card-image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.card-description {
+    text-align: center;
+}
+
+.card-description>h1 {
+    font-size: 22px;
+    color: #111111;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card-description>h2 {
+    font-size: 22px;
+    color: #111111;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    text-align: center;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    background: #E95A08;
+    padding: 19px 0;
+}
+
+
+
+
+
+/* subscribe */
+.subscribe {
+    height: 583px;
+    background: url(./assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: grid;
+    place-items: center;
+}
+
+.subscribe-box {
+    width: 100%;
+    max-width: 830px;
+    margin: 0 auto;
+    height: 140px;
+    text-align: center;
+
+}
+
+.subscribe-box>h1 {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    margin-bottom: 16px;
+
+}
+
+.input-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.input-box>input {
+    width: 100%;
+    max-width: 644px;
+    padding: 15px 20px;
+    background: #ffffff;
+    height: 50px;
+    border: none;
+    margin-right: 0;
+}
+
+
+.btn {
+    text-align: center;
+    width: 186px;
+    height: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    background: #E95A08;
+  
+}
+
+
+/* Footer */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px auto;
+}
+
+.footer-box3 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+}
+
+.footer-box1>.logo {
+    width: 135px;
+    height: 82px;
+    margin-bottom: 16px;
+}
+
+.footer-box1>p {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-family: "Inter", serif;
+    font-weight: 500;
+}
+
+.footer-box1 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-box3>img {
+    height: 40px;
+    width: 40px;
+}
+
+.footer-box2>ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+
+
+}
+
+.footer-box2>ul>li {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.footer-box2>ul>li>a {
+    text-decoration: none;
+    color: rgba(107, 114, 128, 1);
+    font-weight: 500;
+
+}
+
+
+
